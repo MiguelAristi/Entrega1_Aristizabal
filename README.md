@@ -1,4 +1,4 @@
-# Bienvenido a la Entrega1_Aristizabal #
+# :nerd_face: Bienvenido a la Entrega1_Aristizabal :nerd_face: #
 ## Esta es la ClubApp: ##
 ### La misma consiste en un sitio donde podras ver clubles, miembros e invitados. ###
 
@@ -28,7 +28,14 @@ python manage.py runserver
 ```
 ### El sitio ya esta andando! :sunglasses: ###
 
+* Vas a encontrar dos urls
 
+```shell
+1. admin/
+2. clubapp/
+```
+* Vamos a ir a clubapp
+* 
 
 ```shell
 
