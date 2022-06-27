@@ -35,11 +35,13 @@ python manage.py runserver
 2. clubapp/
 ```
 * Vamos a ir a clubapp
-* 
-
+* Allí estaras en el inicio del sitio y podras:
 ```shell
-
+- Ir a Clubes, Miembros o Invitados
+- Buscar un Miembro o Club
 ```
-
-
-
+* Si vas a Clubes, Miembros o Invitados:
+```shell
+En cada uno de ellos podras ver los disponibles y podras agregar más de los mismos.
+```
+## Y listo! Gracias por visitar el sitio :wink:. ##
