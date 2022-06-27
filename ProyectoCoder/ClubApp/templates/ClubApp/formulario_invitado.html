@@ -1,0 +1,17 @@
+{% extends 'ClubApp/base.html' %}
+{% load static %}
+
+{% block tituloPagina %}
+Crear Invitado - App Club
+{% endblock %}
+
+{% block contenidoPagina %}
+<h2>Crea un invitado Nuevo:</h2>
+<form action="" method="post">
+    {% csrf_token %}
+
+    {{ form.as_p }}
+
+    <input type="submit" value="Crear Invitado">
+</form>
+{% endblock %}

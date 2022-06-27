@@ -1,0 +1,27 @@
+{% extends 'ClubApp/base.html' %}
+{% load static %}
+
+{% block tituloPagina %}
+Buscar Club - App Club
+{% endblock %}
+
+{% block contenidoPagina %}
+<h2>Buscar Club:</h2>
+<p>Escribe numero de convenio por favor
+    <form action="" method="post">
+        {% csrf_token %}
+
+        <input type="text" name="club" id="" min="0">
+
+        <input type="submit" value="Buscar">
+    </form>
+</p>
+
+<p>Resultados: </p>
+<ul>
+    {% for i in clubes %}
+        <li>{{i.nombre}} {{i.sede}}  [{{ i.convenio }}]</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}

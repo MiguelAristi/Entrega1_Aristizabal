@@ -1,0 +1,27 @@
+{% extends 'ClubApp/base.html' %}
+{% load static %}
+
+{% block tituloPagina %}
+Buscar Miembro - App Club
+{% endblock %}
+
+{% block contenidoPagina %}
+<h2>Buscar Miembro:</h2>
+<p>Escribe el numero de membresia por favor
+    <form action="" method="post">
+        {% csrf_token %}
+
+        <input type="text" name="miembro" id="" min="0">
+
+        <input type="submit" value="Buscar">
+    </form>
+</p>
+
+<p>Resultados: </p>
+<ul>
+    {% for i in miembros %}
+        <li>{{i.nombre}} {{ i.apellido }} [{{ i.email }}]</li>
+    {% endfor %}
+</ul>
+
+{% endblock %}
