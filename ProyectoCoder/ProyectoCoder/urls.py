@@ -20,6 +20,9 @@ from ClubApp.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls, name ="administrador"),
+    
+    path('', entrada),
+    
     path('clubapp/', include('ClubApp.urls')),
 ]
 

@@ -5,6 +5,9 @@ from .forms import *
 
 # Create your views here.
 
+def entrada(request):
+    return redirect("inicio")
+
 def inicio(request):
 
     return render(request,"ClubApp/index.html",{})
